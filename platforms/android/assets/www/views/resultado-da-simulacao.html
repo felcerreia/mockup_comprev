@@ -1,0 +1,20 @@
+<div layout-align="column">
+    <h3 class="md-subhead">Dados da Simulação</h3>
+    <md-input-container class="md-block novaSimulacao-input">
+        <input name="cpf" type="text" ng-model="novaSimulacao.cpf" placeholder="CPF" aria-label="CPF" ng-readonly="true" required mask="999.999.999-99">
+    </md-input-container>
+    <div layout="row">
+        <md-input-container class="novaSimulacao-input" flex>
+            <input name="dataNascimento" type="date" placeholder="Data de Nascimento" ng-model="novaSimulacao.dataNascimento" aria-label="Data de Nascimento" ng-readonly="true" required>
+        </md-input-container>
+        <!-- md-datepicker ng-model="novaSimulacao.dataNascimento" md-placeholder="Data de Nascimento"></md-datepicker-->
+        <md-input-container class="novaSimulacao-input" flex="20">
+            <input placeholder="Idade" name="idade" value="{{novaSimulacao.dataNascimento | idadeFilter}}" aria-label="Idade" ng-readonly="true">
+        </md-input-container>
+    </div>
+    <md-input-container class="md-block novaSimulacao-input">
+        <input name="produto" type="text" ng-model="novaSimulacao.produto" required placeholder="Produto Escolhido" aria-label="Produto Escolhido" ng-readonly="true">
+    </md-input-container>
+    <p>Confira a Simulação</p>
+    
+</div>

@@ -1,0 +1,20 @@
+<div layout="column" layout-align="none center">
+    <h2 class="width-100 md-title">Lista de Simulações</h2>
+    <div class="grid-simulacoes width-100">
+        <md-grid-list md-cols="1" md-gutter="12px" md-row-height="3.7:1" >
+            <md-grid-tile style="background-color: #F6A5A4" md-whiteframe="2" ng-repeat="simulacao in listaDeSimulacoes.listaSimulacoes">
+                <div class="grid-tile" layout-fill layout="column">
+                    <span flex>{{ simulacao.status }}</span>
+                    <span flex>{{ simulacao.nome }}</span>
+                    <span flex>Data: {{ simulacao.data }} - CPF: {{ simulacao.cpf }}</span>
+                </div>
+            </md-grid-tile>
+        </md-grid-list>
+    </div>
+</div>
+<md-button href="#/nova-simulacao" class="md-fab md-primary md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
+    <md-tooltip md-direction="top">
+        +Simulação
+    </md-tooltip>
+    <md-icon>&#xE145;</md-icon>
+</md-button>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="67.0532mm" height="67.7334mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6242 6305"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="678" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Myriad Web Pro">
+		<font-face-src>
+			<font-face-name name="Myriad Web Pro Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="C" horiz-adv-x="618" d="M558.001 140l23.9978 -119.999c-45.9996,-20.6669 -106.332,-31.0003 -180.998,-31.0003 -113.668,0 -202.833,31.0003 -267.668,92.8319 -64.8319,61.8341 -97.3338,143.836 -97.3338,246.168 0,108 35.3331,194.498 106.002,259.499 70.6661,65.0011 161.666,97.5003 273,97.5003 74.9988,0 133.333,-10.3334 175,-31.0003l-31.9996 -122c-41.6669,17.9996 -87.0003,27.0007 -136,27.0007 -67.6683,0 -121.667,-19.6676 -162.168,-59.0003 -40.4985,-39.3327 -60.8323,-93.6672 -60.8323,-163.001 0,-67.6658 20.0007,-121.165 59.833,-160.667 39.8323,-39.4992 94.4999,-59.3334 164.167,-59.3334 50.3323,0 95.3327,7.66874 135.001,23.0011z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Myriad Web Pro";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil2 {fill:#4067AF}
+    .fil0 {fill:#5464A1}
+    .fil1 {fill:#FFE865}
+    .fnt0 {font-weight:bold;font-size:3633.24px;font-family:'Myriad Web Pro'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M3153 0c1253,0 2335,731 2843,1790 -104,-168 -227,-322 -366,-461 -237,-237 -521,-429 -837,-560 -304,-125 -637,-195 -986,-195 -349,0 -682,70 -986,195 -316,131 -600,323 -837,560 -238,238 -429,522 -560,838 -126,304 -196,637 -196,986 0,349 70,682 196,986 131,315 322,599 560,837 237,238 521,429 837,560 304,126 637,195 986,195 349,0 682,-69 986,-195 316,-131 600,-322 837,-560 139,-139 262,-293 366,-460 -508,1058 -1590,1789 -2843,1789 -1741,0 -3153,-1411 -3153,-3152 0,-1741 1412,-3153 3153,-3153zm2362 1445c-223,-223 -489,-403 -784,-525 -285,-118 -597,-183 -924,-183 -327,0 -639,65 -924,183 -295,122 -561,302 -784,525 -223,222 -403,488 -525,784 -118,284 -183,596 -183,924 0,327 65,639 183,924 122,295 302,561 525,784 223,223 489,402 784,525 285,117 597,182 924,182 327,0 639,-65 924,-182 295,-123 561,-302 784,-525 223,-223 403,-489 525,-784 118,-285 183,-597 183,-924 0,-328 -65,-640 -183,-924 -122,-296 -302,-562 -525,-784z"/>
+  <circle class="fil1" cx="3807" cy="3153" r="2435"/>
+  <g transform="matrix(1.6876 0 -0.46815 1 -4343.71 3987.47)">
+   <text x="3353" y="487"  class="fil2 fnt0">C</text>
+  </g>
+ </g>
+</svg>

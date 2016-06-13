@@ -1,0 +1,84 @@
+<!doctype html>
+<html ng-app="comprevApp">
+
+<head>
+    <meta charset="utf-8">
+    <title ng-bind="title"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/material-design-icons/iconfont/material-icons.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-controller="appCtrl" ng-cloak>
+    <md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+        <md-toolbar class="md-tall" layout-padding layout-align="start center">
+            <img ng-src="images/logo.svg" width="80%">
+            <span class="width-100 md-body-1">Corretor Guilherme Borges</span>
+        </md-toolbar>
+        <md-list>
+            <md-list-item ng-click="goTo(item.link)" ng-repeat="item in menuItems">
+                <md-icon ng-bind-html="item.icon"></md-icon>
+                <p>{{item.name}}</p>
+            </md-list-item>
+        </md-list>
+    </md-sidenav>
+    <md-toolbar class="md-accent" ng-if="haveToolbar">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Menu" ng-if="!backUrl" ng-click="openSideNavPanel()">
+                <md-icon>&#xE5D2;</md-icon>
+            </md-button>
+            <md-button ng-click="$back()" class="md-icon-button" aria-label="Menu" ng-if="backUrl">
+                <md-icon>&#xE5C4;</md-icon>
+            </md-button>
+            <h2>
+        <span ng-bind="title"></span>
+      </h2>
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="Search">
+                <md-icon>&#xE8B6;</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="More">
+                <md-icon>&#xE5D4;</md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <div class="container">
+        <div ng-view class="view-container" ng-cloak></div>
+    </div>
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/ngMask/dist/ngMask.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/status-da-simulacao.js"></script>
+    <script src="scripts/controllers/lista-de-simulacoes.js"></script>
+    <script src="scripts/controllers/nova-simulacao.js"></script>
+    <script src="scripts/controllers/resultado-da-simulacao.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

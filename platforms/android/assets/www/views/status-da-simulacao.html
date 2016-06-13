@@ -1,0 +1,53 @@
+<div layout="column" layout-align="none center">
+    <h2 class="width-100">Status das Simulações</h2>
+    <div class="status-grid width-100">
+        <md-grid-list md-cols="2" md-gutter="4px" md-row-height="1:1">
+            <md-grid-tile style="background-color: #F6A5A4">
+                <md-button href="#/lista-de-simulacoes" class="grid-tile" layout-fill layout="column" layout-align="center center">
+                    <div layout="row" class="width-100" layout-align="start center">
+                        <md-icon aria-label="label">&#xE000;</md-icon><span>Irregulares</span></div>
+                    <span flex></span>
+                    <span class="md-display-3">{{statusDaSimulacao.irregulares}}</span>
+                    <span flex></span>
+                    <span><i>Toque para listar</i></span>
+                </md-button>
+            </md-grid-tile>
+            <md-grid-tile style="background-color: #E0CD92">
+                <md-button href="" class="grid-tile" layout-fill layout="column" layout-align="center center" ng-click="statusDaSimulacao.add('transmitidasIrregulares')">
+                    <div layout="row" class="width-100" layout-align="start center">
+                        <md-icon aria-label="label">&#xE611;</md-icon><span>Transmitidas com Irregularidades</span></div>
+                    <span flex></span>
+                    <span class="md-display-3">{{statusDaSimulacao.transmitidasIrregulares}}</span>
+                    <span flex></span>
+                    <span><i>Toque para listar</i></span>
+                </md-button>
+            </md-grid-tile>
+            <md-grid-tile style="background-color: #EAE9E7">
+                <md-button href="" class="grid-tile" layout-fill layout="column" layout-align="center center" ng-click="statusDaSimulacao.add('aguardandoTranmissao')">
+                    <div layout="row" class="width-100" layout-align="start center">
+                        <md-icon aria-label="label">&#xE035;</md-icon><span>Aguardando Transmissão</span></div>
+                    <span flex></span>
+                    <span class="md-display-3">{{statusDaSimulacao.aguardandoTranmissao}}</span>
+                    <span flex></span>
+                    <span><i>Toque para listar</i></span>
+                </md-button>
+            </md-grid-tile>
+            <md-grid-tile style="background-color: #B3C8A6">
+                <md-button href="" class="grid-tile" layout-fill layout="column" layout-align="center center" ng-click="statusDaSimulacao.add('transmitidas')">
+                    <div layout="row" class="width-100" layout-align="start center">
+                        <md-icon aria-label="label">&#xE163;</md-icon><span>Transmitidas</span></div>
+                    <span flex></span>
+                    <span class="md-display-3">{{statusDaSimulacao.transmitidas}}</span>
+                    <span flex></span>
+                    <span><i>Toque para listar</i></span>
+                </md-button>
+            </md-grid-tile>
+        </md-grid-list>
+    </div>
+</div>
+<md-button href="#/nova-simulacao" class="md-fab md-primary md-fab-bottom-right" aria-label="Add">
+    <md-tooltip md-direction="top">
+        +Simulação
+    </md-tooltip>
+    <md-icon>&#xE145;</md-icon>
+</md-button>

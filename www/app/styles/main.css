@@ -1,0 +1,166 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.container {
+    margin: 12px;
+}
+
+.login-container {
+    text-align: center;
+    height: 100vh;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.bottom-center {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.align-center {
+    text-align: center;
+}
+
+margin-12 {
+    margin: 12;
+}
+
+.md-button.md-fab.md-fab-bottom-right {
+    position: fixed;
+}
+
+.login-container .layout-column {
+    width: 80%;
+    max-width: 400px;
+}
+
+.login-btn {
+    width: 150px;
+}
+
+
+/*
+  ###
+  ### Status da simulação
+  ###
+*/
+
+.status-grid {
+    max-width: 600px;
+}
+
+.status-grid .md-button {
+    line-height: normal;
+    white-space: normal;
+    text-transform: none;
+    text-align: start;
+    font-size: 12px;
+}
+
+.grid-tile {
+    padding: 12px;
+}
+
+.grid-tile .material-icons {
+    color: black;
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    margin: 0;
+    padding-right: 36px;
+}
+
+
+/*
+  ###
+  ### Lista de simulações
+  ###
+*/
+
+.grid-simulacoes {
+    max-width: 400px;
+    font-size: 14px;
+}
+
+
+/*
+  ###
+  ### Nova Simulação
+  ###
+*/
+
+.novaSimulacao-input {
+    margin: 0;
+}
+
+.novaSimulacao-tab1 {
+    width: 100vw;
+    margin-left: -12px;
+    padding-bottom: 42px !important;
+}
+
+.novaSimulacao-tab1 md-tabs-wrapper {
+    background-color: #939FCE;
+}
+
+.novaSimulacao-tab1 .md-center-tabs {
+    height: 42px;
+}
+
+.novaSimulacao-tab1 .md-tab {
+    padding: 10px 16px;
+}
+
+.novaSimulacao-label-tab1 {
+    font-size: 12px;
+    text-transform: none;
+    color: #000;
+    line-height: 20px;
+}
+
+.novaSimulacao-icon-tab1 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000 !important;
+}
+
+.novaSimulacao-tab1 md-ink-bar {
+    background-color: white;
+    color: white;
+}
+
+.novaSimulacao-tab2 {
+    margin-top: 12px;
+}
+
+.novaSimulacao-tab2 md-tabs-canvas,
+.novaSimulacao-tab2 md-pagination-wrapper {
+    height: 42px;
+}
+
+.novaSimulacao-tab2 md-tabs-wrapper {
+    background-color: #C7C7C7;
+}
+
+.novaSimulacao-label-tab2 {
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+    line-height: 24px;
+}
+
+.novaSimulacao-tab2 md-ink-bar {
+    background-color: black;
+    color: black;
+}

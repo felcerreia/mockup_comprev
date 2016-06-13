@@ -1,0 +1,90 @@
+<div layout-align="column">
+    <h3 class="md-subhead">Dados da Simulação</h3>
+    <md-input-container class="md-block novaSimulacao-input">
+        <input name="cpf" type="tel" ng-model="novaSimulacao.cpf" required placeholder="CPF" aria-label="CPF" mask="999.999.999-99">
+    </md-input-container>
+    <div layout="row">
+        <md-input-container class="novaSimulacao-input" flex>
+            <input name="dataNascimento" type="date" placeholder="Data de Nascimento" ng-model="novaSimulacao.dataNascimento" aria-label="Data de Nascimento">
+        </md-input-container>
+        <!-- md-datepicker ng-model="novaSimulacao.dataNascimento" md-placeholder="Data de Nascimento"></md-datepicker-->
+        <md-input-container class="novaSimulacao-input" flex="20" ng-show="novaSimulacao.dataNascimento">
+            <input placeholder="Idade" name="idade" value="{{novaSimulacao.dataNascimento | idadeFilter}}" aria-label="Idade" ng-readonly="true">
+        </md-input-container>
+    </div>
+    <md-tabs class="novaSimulacao-tab1" md-selected="selectedIndex" md-dynamic-height md-border-bottom md-center-tabs md-align-tabs="top">
+        <md-tab>
+            <md-tab-label>
+                <md-icon class="novaSimulacao-icon-tab1">&#xE148;</md-icon>
+                <span class="novaSimulacao-label-tab1">Produtos</span>
+            </md-tab-label>
+            <md-tab-body>
+                <md-content layout-padding>
+                    Selecione o Produto:
+                    <md-tabs class="novaSimulacao-tab2" md-selected="selectedIndex2" md-dynamic-height md-border-bottom md-align-tabs="top">
+                        <md-tab>
+                            <md-tab-label>
+                                <span class="novaSimulacao-label-tab2">Produto 1</span>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <md-content layout-padding>
+                                    Adicione coberturas que deseja simular
+                                </md-content>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab>
+                            <md-tab-label>
+                                <span class="novaSimulacao-label-tab2">Produto 2</span>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <md-content layout-padding>
+                                    Adicione coberturas que deseja simular
+                                </md-content>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab>
+                            <md-tab-label>
+                                <span class="novaSimulacao-label-tab2">Produto 3</span>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <md-content layout-padding>
+                                    Adicione coberturas que deseja simular
+                                </md-content>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab>
+                            <md-tab-label>
+                                <span class="novaSimulacao-label-tab2">Produto 4</span>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <md-content layout-padding>
+                                    Adicione coberturas que deseja simular
+                                </md-content>
+                            </md-tab-body>
+                        </md-tab>
+                    </md-tabs>
+                    <div layout="row" class="width-100" layout-align="center center">
+                        <md-button class="md-raised md-primary" aria-label="Adicionar Cobertura" > Adicionar Cobertura </md-button>
+                    </div>
+                </md-content>
+            </md-tab-body>
+        </md-tab>
+        <md-tab>
+            <md-tab-label>
+                <md-icon class="novaSimulacao-icon-tab1">&#xE148;</md-icon>
+                <span class="novaSimulacao-label-tab1">Assistências</span>
+            </md-tab-label>
+            <md-tab-body>
+                <md-content class="md-padding">
+                    Selecione a Assistência:
+                </md-content>
+            </md-tab-body>
+        </md-tab>
+    </md-tabs>
+</div>
+<md-button href="#/resultado-da-simulacao" class="md-fab md-accent md-fab-bottom-right" aria-label="Add"">
+    <md-tooltip md-direction="top">
+        Simular
+    </md-tooltip>
+    <md-icon>&#xE5C8;</md-icon>
+</md-button>
